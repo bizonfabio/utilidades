@@ -60,8 +60,8 @@ for pessoa in nomes:
 for pessoa, amigo in pares.items():
     receiver_email = pessoas[pessoa]
     send_email(sender_email, sender_password, receiver_email, subject, pessoa, amigo)
-    
-    print(f"{pessoa} pegou {amigo}")
+    #Deixar essa linha comentada, risco de vazamento de informação.
+    #print(f"{pessoa} pegou {amigo}")
 
 
 
